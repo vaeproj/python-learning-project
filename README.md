@@ -12,17 +12,23 @@ the first thing you will do, assuming you have git installed and set up is clone
 The above command will clone the repository down to your local machine.  Git does not require github, git exists to track all code changes through commits.  Github simply serves as a remote repository to enable sharing and collaborating on code bases.  You will use git locally to track your code changes and then push these changes to the remote repository in github.
 
 ## Feature Branches
-Feature Branches are what you will develop your code in.  When ever you start developing you will ensure that you are developing from the most recent version of master or staging(we will work off of staging).  Make sure you are using the staging branch with the following command
-**git fetch**
+Feature Branches are what you will develop your code in.  When ever you start developing you will ensure that you are developing from the most recent version of master or staging(we will work off of staging).  Make sure you are using the staging branch with the following command.   
+
+**git fetch** 
+
 **git pull**
 
 Git fetch will get all changes from the remote repository in github.  Git pull will pull any new changes into your currently checked out local branch.
 
 Next you will run 
-**git branch {branch_name}**(branch_name being whatever you want to call the branch.)
-Git branch will simply create the new branch but it will not check it out.  Next you will use 
-**Git checkout {new_branch}**(whatever you just named the branch)
-You should now be on your new branch.  You can verify this by typing git branch
+**git branch {branch_name}**(branch_name being whatever you want to call the branch.). 
+
+Git branch will simply create the new branch but it will not check it out.  Next you will use  
+
+**Git checkout {new_branch}**(whatever you just named the branch) 
+
+You should now be on your new branch.  You can verify this by typing git branch 
+
 
 **Git Status**
 Git status will tell you what branch you are one and what code changes you have made.  
@@ -41,11 +47,16 @@ assuming you have commits that do not exist on the remote repository this comman
 Once the code is up into git hub and you feel good about the code, you will open a pull request to merge the code changes in to staging/master.  A pull request gives an opportunity for the team to review the code changes before they are merged into the main branches.
 
 ## Summary of important commands
-**git clone** - git clone copies the repository to your local system.  You will generally only have to do this once.
-**git checkout** - git checkout will checkout a branh.
-**git status** - tells you what branch you are on and what files you have changed.
-**git add {path_to_file}** - stages changes for a commit 
-**git commit -m "Commit message"** - adds changes to a commit.  the -m flag adds a commit message that should describe the changes.
+**git clone** - git clone copies the repository to your local system.  You will generally only have to do this once.  
+
+**git checkout** - git checkout will checkout a branh.  
+
+**git status** - tells you what branch you are on and what files you have changed.  
+
+**git add {path_to_file}** - stages changes for a commit  
+
+**git commit -m "Commit message"** - adds changes to a commit.  the -m flag adds a commit message that should describe the changes.  
+
 **git push origin {branch_name}** - pushes local commits to branch on github.  Creates the remote branch if it does not exist.
 
 These commands are really only the basic commands needed to start using git but they are only a small subset of git commands that are available.
