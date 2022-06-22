@@ -19,3 +19,4 @@ var: str = 'test'
 
 # type(var) will return the type if you need to determine a data type.
 
+test = "test"
